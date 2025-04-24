@@ -1,0 +1,257 @@
+/* 
+Lato font for titles 
+News Cycle for rest of text
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&family=Oswald:wght@200..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    background-size: 100px;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-family: "Lato Static", sans-serif;
+}
+header {
+    background-color: #950101;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    z-index: 0;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    padding: 14px 16px;
+    margin-left: 5%;
+    font-family: "News Cycle", sans-serif;
+}
+.topnav {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+main {
+    padding-top: 80px; /* adjust depending on header height */
+    flex: 1;
+}
+img {
+    height: 60%;
+    max-width: 100%;
+    height: auto;
+}
+p {
+    font-family: "News Cycle", sans-serif;
+}
+video{
+    z-index: 3;
+    width: 100%;
+    max-width: 100%;
+}
+button {
+    font-size: 140%;
+}
+.white{
+    color: white;
+}
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+/* IDs*/
+#main-title{
+    padding-top: 3rem;
+    font-size: 500%;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+}
+#slogan {
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+}
+#about-text {
+    font-size: 120%;
+    color: white;
+    display: inline-block;
+    font-family: "News Cycle", sans-serif;
+    width: 70%;
+}
+/* CLASSES */
+.main-title{
+    padding-top: 6rem;
+    font-size: 500%;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+}
+#about-title {
+    text-decoration: underline;
+    padding-top: 2%;
+    margin-top: 2%;
+    font-size: 250%;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+}
+/* ABOUT SECTION */
+/* GALLERY SECTION */
+#gallery-title {
+    text-decoration: underline;
+    padding-top: 2%;
+    margin-top: 2%;
+    font-size: 250%;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+}
+#image-block {
+    size: 10px;
+    align-items: stretch;
+    margin-top: 2%;
+}
+/* SCHEDULE SECTION */
+#class-title {
+    text-decoration: underline;
+    padding-top: 2%;
+    margin-top: 2%;
+    font-size: 250%;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+}
+table, th, td{
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+#class-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+#class-table{
+    align-self:center;
+    margin: 0 auto;
+    padding: auto;
+    min-width: 550px;
+}
+#class-table table {
+    margin: 0 auto;
+}
+/* SIGN UP SECTION */
+#signup-title {
+    text-decoration: underline;
+    padding-top: 2%;
+    margin-top: 2%;
+    font-size: 250%;
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+}
+form {
+    font-size: 135%;
+    color: white;
+    font-family: "News Cycle", sans-serif;
+    text-align: center;
+}
+/* FOOTER SECTION */
+#social-media {
+    padding: 20px 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+    display:flex;
+    text-align: center;
+}
+#social-media i {
+    color: #fffdfd;
+    font-size: 150%;
+} 
+footer {
+    background-color: #950101;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; /* creates a visual 'thirds' layout */
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+}
+.footer-icons a {
+    color: white;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+}
+.footer-icons a:hover {
+    transform: scale(1.2);
+}
+footer p {
+    color: white;
+    font-size: 0.95rem;
+}
+@media(max-width:500px) {
+    body {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
+    main {
+        width: 100%; 
+    }
+    #gym-title, #slogan, #text-one {
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    header a {
+        margin-left: 0;
+    }
+}
+@media(max-width: 850px) {
+    body {
+        background-size: 250%;
+        background-position: 20%;
+    }
+}
+@media (max-width: 950px) {
+    .topnav {
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5rem 0;
+    }
+    .topnav a {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+    .topnav a i {
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 0.2rem;
+    }
+    .topnav a .nav-text {
+        display: none;
+    }
+}
+@media(min-width: 1100px) {
+    body {
+        background-size: 190%;
+        background-position: 5%;
+    }
+    img {
+        height: 40%;
+    }
+}
